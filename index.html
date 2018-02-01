@@ -2,30 +2,39 @@
 <head>
     <meta charset="UTF-8">
     <style type="text/css">
-        #password {
-            background-color: #325684;
+        #enter_button{
+            color: #7f7d44;
         }
+        div-center{
+            position: center;
+        }
+
     </style>
 </head>
 <body>
-    <div></div> <!--Caixa azul-->
-        <div></div> <!--Imagem e LAMAV-->
-        <div> <!--login pra baixo-->
-            <form action>
-               <div>
-                   <input type="text" required id="username"></input>
-               </div>
-               <div>
-                   <input type="password" required id="password"></input>
-               </div>
-               <div> <!--enter-->
-                   <input type="submit" value="ENTRAR">
-                   </input>
-               </div>
-            </form>
-
-
+    <div id="center"> <!--Caixa azul-->
+        <div>
+            <!--Imagem e LAMAV-->
+            <img src="C:\Users\Bianca Garcia\Desktop\LAMAV\image_preview.png" /
         </div>
+        <div id="login">
+            <!--login pra baixo-->
+            <form action>
+                <div>
+                    <input type="text" required id="username"></input>
+                </div>
+                <div>
+                    <input type="password" required id="password"></input>
+                </div>
+                <div>
+                    <!--enter-->
+                    <input type="submit" required id="enter_button" value="ENTRAR">
+                    </input>
+                </div>
+            </form>
+        </div>
+    </div>
 
 </body>
 </html>
+
