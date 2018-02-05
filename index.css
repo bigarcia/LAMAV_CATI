@@ -1,0 +1,38 @@
+html, body {height:100%; width: 100%}
+
+html {overflow-y:hidden;	overflow-x:hidden}
+
+button{
+	background: #e0e0e0;
+	font-family: Arial;
+	font-weight: bold;
+	color: #7f7d44;
+	font-size: 20px;
+	position: relative;
+	left: 50%;
+	top: 100%;
+	margin-left: -80px;
+	height: 45px;
+	width: 195px;
+	padding: 10px 20px 10px 20px;
+}
+
+#campo{
+    color: #7f7d44;
+	font-size: 20px;
+	font-weight: bold;
+	height: 40px;
+	width: 193px;
+}
+
+#login{
+	background-color: #025285;
+	border-radius: 25px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -172px;
+	margin-top: -262px;
+	padding: 30px 30px 30px 30px;
+}
+

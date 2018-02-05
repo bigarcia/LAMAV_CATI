@@ -1,0 +1,36 @@
+html, body{
+    width: 100%;
+    overflow-x:hidden;
+}
+tr, output, #texto{
+    color: #7f7d44;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+input{
+    background-color: #8B8B83;
+    color: #025285;
+    width: 70px;
+    height: 25px;
+    font-weight: bold; 
+    font-size: 20px;
+}
+#texto{
+    text-decoration: underline;
+    text-align: center;
+}
+#cabeçalho, #resultado{
+    background-color: #025285;
+}
+#resultado{
+    border-radius: 20px;
+    margin-left: 530px;
+    margin-right: 530px;
+}
+.logo{
+    margin-left: 666px;
+}
+.C1, .C2, .C3{
+    padding: 50px 50px 50px 50px;
+}

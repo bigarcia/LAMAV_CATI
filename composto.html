@@ -1,202 +1,89 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>    </title>
-    <style type="text/css">
-        h1,h2{
-            color: #7f7d44;
-        }
-        h1 {
-            text-decoration: underline;
-        }
-        h4{
-            color: #325684;
-        }
-        input[type=text] {
-            background-color: #8B8B83;
-            width: 50px;
-            color: #325684;
-        }
-        /*.class1 {
-            float: left;
-            width: 40%;
-        }
-
-        .class3 {
-           position:center;
-        }*/
-        #celsius{
-            background-color: #325684;
-            width: 90px;
-            text-align: center;
-            border-radius: 20px;
-        }
-    </style>
-</head>
-<body>
-    <div>
-        <div ><!--head-->
-           <img src="C:\Users\Bianca Garcia\Desktop\LAMAV\image_preview.png" width="200"/> 
-            
-        </div>
-        <div id="body"><!--seleção de compostos-->
-            <h1>Seleção de Compostos</h1>
-            
-            <div class="class1"><!--Coluna-->
-                <div><!--Elemento-->
-                    <div class="class2">
-                        <!--Check-->
-                        <img src="C:\Users\Bianca Garcia\Desktop\LAMAV\checked-checkbox.png" width="20" />
-                        
-                    </div>
-
-                    <div class="class2"><!--Name-->
-                        <h2>SiO2</h2>
-                        
-                    </div>
-                    <div class="class2"><!--Number-->
-                        <input type="text" required id="quantity" width="40"></input>
-                    </div>
-                </div>
-                <div>
-                    <div class="class2"><!--Check-->
-                        <img src="C:\Users\Bianca Garcia\Desktop\LAMAV\checked-checkbox.png" width="20" />
-    
-                    </div>
-                    <div class="class2">
-                        <!--Name-->
-                        <h2>Na2CO3</h2>
-                    </div>
-                    <div class="class2">
-                        <!--Number-->
-                        <input type="text" required id="quantity"></input>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="class2"><!--Check-->
-                        <img src="C:\Users\Bianca Garcia\Desktop\LAMAV\checked-checkbox.png" width="20" />
-                    </div>
-                    <div class="class2"><!--Name-->
-                        <h2>CaCo3</h2>
-                    </div>
-                    <div class="class2">
-                        <!--Number-->
-                        <input type="text" required id="quantity"></input>
-                    </div>
-                </div>
-
+    <head>
+        <meta charset="UTF-8">
+        <title>LaMaV - Compostos</title>
+        <link rel="stylesheet" type="text/css" href="composto.css">
+    </head>
+    <body>
+        <div>
+            <div id="cabeçalho"> <!--cabeçalho-->
+               <img class="logo" src="logo.png" width="200"> 
             </div>
-          
-            <div class="class1"><!--Coluna-->
-                <div>
-                    <div>
-                        <!--Check-->
-                    </div>
-                    <div>
-                        <!--Name-->
-                        <h2>NaS2</h2>
-                    </div>
-                    <div>
-                        <!--Number-->
-                        <input type="text" required id="quantity"></input>
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        <!--Check-->
-                    </div>
-                    <div>
-                        <!--Name-->
-                        <h2>KCl</h2>
-                    </div>
-                    <div>
-                        <!--Number-->
-                        <input type="text" required id="quantity"></input>
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        <!--Check-->
-
-                    </div>
-                    <div>
-                        <!--Name-->
-                        <h2>Ca3(PO4)2</h2>
-                    </div>
-                    <div>
-                        <!--Number-->
-                        <input type="text" required id="quantity"></input>
-                    </div>
-                </div>
+            <div id="texto">
+                <h2>Seleção de Compostos</h2>
             </div>
-            
-
-            <div class="class1">
-                <!--Coluna-->
-                <div>
-                    <div>
-                        <!--Check-->
-
-                    </div>
-                    <div>
-                        <!--Name-->
-                        <h2>AIPO4</h2>
-                    </div>
-                    <div>
-                        <!--Number-->
-                        <input type="text" required id="quantity"></input>
-
-                    </div>
-
+            <!--TABELA DE COMPOSTOS-->
+            <div>
+                <table>
+                    <tr class="L1"> <!--LINHA 1-->
+                        <td class="C1"> <!--COLUNA 1-->
+                            <div id='div_img11'></div>
+                            <label onclick = "javascript: Click(11);"> SiO </label> <!--11 = 1: nº da linha, 1: nº da coluna-->
+                            <div id='input11'></div>
+                        </td>
+                        <td class="C2"> <!--COLUNA 2-->
+                            <div id='div_img12'></div>
+                            <label onclick = "javascript: Click(12);"> Na2CO3 </label> <!--12 = 1: nº da linha, 2: nº da coluna-->
+                            <div id='input12'></div>
+                        </td>
+                        <td class="C3"> <!--COLUNA 3--> 
+                            <div id='div_img13'></div>
+                            <label onclick = "javascript: Click(13);"> CaCO3 </label> <!--13 = 1: nº da linha, 3: nº da coluna-->
+                            <div id='input13'></div>
+                        </td>
+                    </tr>
+                    <tr class="L2"> <!--LINHA 2-->
+                        <td class="C1"> <!--COLUNA 1-->
+                            <div id='div_img21'></div>
+                            <label onclick = "javascript: Click(21);"> NaS2 </label>
+                            <div id='input21'></div>
+                        </td>
+                        <td class="C2"> <!--COLUNA 2-->
+                            <div id='div_img22'></div>
+                            <label onclick = "javascript: Click(22);"> KCl </label>
+                            <div id='input22'></div>
+                        </td>
+                        <td class="C3"> <!--COLUNA 3-->
+                            <div id='div_img23'></div>
+                            <label onclick = "javascript: Click(23);"> Ca3(PO4)2 </label>
+                            <div id='input23'></div>
+                        </td>
+                    </tr>
+                    <tr class="L3"> <!--LINHA 3-->
+                        <td class="C1"> <!--COLUNA 1-->
+                            <div id='div_img31'></div>
+                            <label onclick = "javascript: Click(31);"> AlPO4 </label>
+                            <div id='input31'></div>
+                        </td>
+                        <td class="C2"> <!--COLUNA 2-->
+                            <div id='div_img32'></div>
+                            <label onclick = "javascript: Click(32);"> BaS </label>
+                            <div id='input32'></div>
+                        </td>
+                        <td class="C3"> <!--COLUNA 3-->
+                            <div id='div_img33'></div>
+                            <label onclick = "javascript: Click(33);"> NaCl </label>
+                            <div id='input33'></div>
+                        </td>
+                    </tr>
+                </table>
+            </div> <!--FIM TABELA-->
+            <div id="texto"> <!--RESULTADO-->
+                <h2>Resultado</h2>
+            </div>
+                <div id="resultado">   
+                    <br> 
+                    <output> NEURAL NETWORK </output>
+                    <br>
                 </div>
-                <div>
-                    <div>
-                        <!--Check-->
 
-                    </div>
-                    <div>
-                        <!--Name-->
-                        <h2>BaS</h2>
-                    </div>
-                    <div>
-                        <!--Number-->
-                        <input type="text" required id="quantity"></input>
-
-                    </div>
-
-                </div>
-                <div>
-                    <div>
-                        <!--Check-->
-
-                    </div>
-                    <div>
-                        <!--Name-->
-                        <h2>NaCl</h2>
-                    </div>
-                    <div>
-                        <!--Number-->
-                        <input type="text" required id="quantity"></input>
-                    </div>
-                </div>                
-            </div>
-
-            <div class="class3">
-                <h1>Resultado</h1>
-            </div>
-            <div class="class3" id="celsius">    
-                <output name="" required id="temperature" for="" ></output>
-                <!--<h2>1500ºC</h2>-->
-            </div>
-        </div>
-
-    </div>
-
-
-</body>
+            <script language = 'javascript'> 
+                function Click(pos){ //Parâmetro pos é a concatenação do nº da linha e da coluna correspondentes à posição do composto na tabela
+                    document.getElementById('div_img'+ pos).innerHTML = '<img src = "checked-checkbox.png" width="20">'; 
+                    document.getElementById('input'+ pos).innerHTML = '<input type="text" required id="quantity" autofocus></input>'; 
+                } 
+            </script>
+    </body>
 </html>

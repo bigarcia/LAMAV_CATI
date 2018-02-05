@@ -1,40 +1,28 @@
-﻿<html>
-<head>
-    <meta charset="UTF-8">
-    <style type="text/css">
-        #enter_button{
-            color: #7f7d44;
-        }
-        div-logo{
-            position: relative;
-        }
-
-    </style>
-</head>
-<body>
-    <div id="center"> <!--Caixa azul-->
-        <div id="logo">
-            <!--Imagem e LAMAV-->
-            <img src="C:\Users\Bianca Garcia\Desktop\LAMAV\image_preview.png" />
-        </div>
-        <div id="login">
-            <!--login pra baixo-->
-            <form action>
-                <div>
-                    <input type="text" required id="username"></input>
-                </div>
-                <div>
-                    <input type="password" required id="password"></input>
-                </div>
-                <div>
-                    <!--enter-->
-                    <input type="submit" required id="enter_button" value="ENTRAR">
-                    </input>
-                </div>
-            </form>
-        </div>
-    </div>
-
-</body>
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<head>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<title>LaMaV - Login</title>
+	</head>
+	<body>
+		<div id="login">
+			<img src="logo.png">
+			<form>
+				<table>
+					 <tr>
+					   <td><img src="user.png" width="45"></td>
+					   <td><input id="campo" type="text" name="user" autofocus> <br></td>
+					 </tr>
+					 <tr>
+					   <td><img src="senha.png" width="50"></td>
+					   <td><input id="campo" type="password" name="password"> <br></td>
+					 </tr>
+				</table>
+				<div>
+					<br><br><button type="submit" name="login" value="entrar">ENTRAR</button>
+				</div>
+			</form>
+		</div>
+	</body>
 </html>
-
