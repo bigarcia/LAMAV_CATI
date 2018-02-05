@@ -19,53 +19,54 @@
                 <table>
                     <tr class="L1"> <!--LINHA 1-->
                         <td class="C1"> <!--COLUNA 1-->
-                            <div id='div_img11'></div>
-                            <label onclick = "javascript: Click(11); "> SiO </label> <!--11 = 1: nº da linha, 1: nº da coluna-->
-                            <div id='input11'></div>
+                            <div class="C11" id='div_img11'></div>
+                            <label onclick = "javascript: Click(11); "> SiO<sub>2</sub> </label> <!--11 = 1: nº da linha, 1: nº da coluna-->
+                            <div class="C11" id='input11'></div>
+                           
                         </td>
                         <td class="C2"> <!--COLUNA 2-->
-                            <div id='div_img12'></div>
-                            <label onclick = "javascript: Click(12);"> Na2CO3 </label> <!--12 = 1: nº da linha, 2: nº da coluna-->
-                            <div id='input12'></div>
+                            <div class="C12" id='div_img12'></div>
+                            <label onclick="javascript: Click(12);"> Na<sub>2</sub>CO<sub>3</sub></label> <!--12 = 1: nº da linha, 2: nº da coluna-->
+                            <div class="C12" id='input12'></div>
                         </td>
                         <td class="C3"> <!--COLUNA 3--> 
-                            <div id='div_img13'></div>
-                            <label onclick = "javascript: Click(13);"> CaCO3 </label> <!--13 = 1: nº da linha, 3: nº da coluna-->
-                            <div id='input13'></div>
+                            <div class="C13" id='div_img13'></div>
+                            <label onclick = "javascript: Click(13);"> CaCO<sub>3</sub></label> <!--13 = 1: nº da linha, 3: nº da coluna-->
+                            <div class="C13" id='input13'></div>
                         </td>
                     </tr>
                     <tr class="L2"> <!--LINHA 2-->
                         <td class="C1"> <!--COLUNA 1-->
-                            <div id='div_img21'></div>
-                            <label onclick = "javascript: Click(21);"> NaS2 </label>
-                            <div id='input21'></div>
+                            <div class="C21" id='div_img21'></div>
+                            <label onclick = "javascript: Click(21);"> NaS<sub>2</sub></label>
+                            <div class="C21" id='input21'></div>
                         </td>
                         <td class="C2"> <!--COLUNA 2-->
-                            <div id='div_img22'></div>
+                            <div class="C22" id='div_img22'></div>
                             <label onclick = "javascript: Click(22);"> KCl </label>
-                            <div id='input22'></div>
+                            <div class="C22" id='input22'></div>
                         </td>
                         <td class="C3"> <!--COLUNA 3-->
-                            <div id='div_img23'></div>
-                            <label onclick = "javascript: Click(23);"> Ca3(PO4)2 </label>
-                            <div id='input23'></div>
+                            <div class="C23" id='div_img23'></div>
+                            <label onclick = "javascript: Click(23);"> Ca<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub></label>
+                            <div class="C23" id='input23'></div>
                         </td>
                     </tr>
                     <tr class="L3"> <!--LINHA 3-->
                         <td class="C1"> <!--COLUNA 1-->
-                            <div id='div_img31'></div>
-                            <label onclick = "javascript: Click(31);"> AlPO4 </label>
-                            <div id='input31'></div>
+                            <div class="C31" id='div_img31'></div>
+                            <label onclick = "javascript: Click(31);"> AlPO<sub>4</sub></label>
+                            <div class="C31" id='input31'></div>
                         </td>
                         <td class="C2"> <!--COLUNA 2-->
-                            <div id='div_img32'></div>
+                            <div class="C32" id='div_img32'></div>
                             <label onclick = "javascript: Click(32);"> BaS </label>
-                            <div id='input32'></div>
+                            <div class="C32" id='input32'></div>
                         </td>
                         <td class="C3"> <!--COLUNA 3-->
-                            <div id='div_img33'></div>
+                            <div class="C33" id='div_img33'></div>
                             <label onclick = "javascript: Click(33);"> NaCl </label>
-                            <div id='input33'></div>
+                            <div class="C33" id='input33'></div>
                         </td>
                     </tr>
                 </table>
@@ -79,67 +80,7 @@
                     <br>
                 </div>
 
-            <script language = 'javascript'> 
-                /*$("#inputid input:checkbox").click(function () {
-                    var check = $(this);
-                    if (check.is(':checked')) {
-                        function Click(pos) { //Parâmetro pos é a concatenação do nº da linha e da coluna correspondentes à posição do composto na tabela
-                            document.getElementById('div_img' + pos).innerHTML = '<img src = "checked-checkbox.png" width="20">';
-                            document.getElementById('input' + pos).innerHTML = '<input type="text" required id="quantity" autofocus></input>';
-                        } 
-                    }
-                    else { 
-                        function Unclick(pos) {
-                            document.getElementById('div_img' + pos).innerHTML = "";
-                            document.getElementById('input' + pos).innerHTML = "";
-                        }
-                    });   
-                
-                function Click(pos) {
-                    if (pos.checked) {
-                        document.getElementById('div_img' + pos).innerHTML = '<img src = "checked-checkbox.png" width="20">';
-                        document.getElementById('input' + pos).innerHTML = '<input type="text" required id="quantity" autofocus></input>';
-                    } else {
-                        document.getElementById('div_img' + pos).innerHTML = "";
-                        document.getElementById('input' + pos).innerHTML = "";
-                    }
-                    
-                }
-
-               
-                function Click(pos) {  
-                   
-                    if (!$('div_img' + pos).show()) {
-                        document.getElementById('div_img' + pos).innerHTML = '<img src = "checked-checkbox.png" width="20">';
-                        document.getElementById('input' + pos).innerHTML = '<input type="text" required id="quantity" autofocus></input>';
-                        $('div_img' + pos).show();
-                        $('input' + pos).show();
-                    } else {
-                        $('div_img' + pos).hide();
-                        $('input' + pos).hide();
-                    }
-                }
-                $("#hide").click(function () {
-                   
-                });
-                $("#show").click(function () {
-                   
-               function toggle_visibility(id + pos) {
-                    document.getElementById('div_img' + pos) = '<img src = "checked-checkbox.png" width="20">';
-                    document.getElementById('input' + pos) = '<input type="text" required id="quantity" autofocus></input>';
-                    var e = document.getElementById('div_img' + pos);
-                    var b = document.getElementById('input' + pos);
-                    if (e.style.display == 'block' && b.style.display == 'block') { 
-                        e.style.display = 'none';
-                        b.style.display = 'none';
-                    }
-                    else{
-                        e.style.display = 'block';
-                        b.style.display = 'block';
-                    }
-                }
-                */
-                
+            <script language = 'javascript'>               
                 function Click(pos) { //Parâmetro pos é a concatenação do nº da linha e da coluna correspondentes à posição do composto na tabela
                     if (document.getElementById('div_img' + pos).innerHTML == '' && document.getElementById('input' + pos).innerHTML == ''){
                         document.getElementById('div_img' + pos).innerHTML = '<img src = "checked-checkbox.png" width="20">';
