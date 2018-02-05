@@ -20,7 +20,7 @@
                     <tr class="L1"> <!--LINHA 1-->
                         <td class="C1"> <!--COLUNA 1-->
                             <div id='div_img11'></div>
-                            <label onclick = "javascript: Click(11);"> SiO </label> <!--11 = 1: nº da linha, 1: nº da coluna-->
+                            <label onclick = "javascript: Click(11); "> SiO </label> <!--11 = 1: nº da linha, 1: nº da coluna-->
                             <div id='input11'></div>
                         </td>
                         <td class="C2"> <!--COLUNA 2-->
@@ -80,9 +80,75 @@
                 </div>
 
             <script language = 'javascript'> 
-                function Click(pos){ //Parâmetro pos é a concatenação do nº da linha e da coluna correspondentes à posição do composto na tabela
-                    document.getElementById('div_img'+ pos).innerHTML = '<img src = "checked-checkbox.png" width="20">'; 
-                    document.getElementById('input'+ pos).innerHTML = '<input type="text" required id="quantity" autofocus></input>'; 
+                /*$("#inputid input:checkbox").click(function () {
+                    var check = $(this);
+                    if (check.is(':checked')) {
+                        function Click(pos) { //Parâmetro pos é a concatenação do nº da linha e da coluna correspondentes à posição do composto na tabela
+                            document.getElementById('div_img' + pos).innerHTML = '<img src = "checked-checkbox.png" width="20">';
+                            document.getElementById('input' + pos).innerHTML = '<input type="text" required id="quantity" autofocus></input>';
+                        } 
+                    }
+                    else { 
+                        function Unclick(pos) {
+                            document.getElementById('div_img' + pos).innerHTML = "";
+                            document.getElementById('input' + pos).innerHTML = "";
+                        }
+                    });   
+                
+                function Click(pos) {
+                    if (pos.checked) {
+                        document.getElementById('div_img' + pos).innerHTML = '<img src = "checked-checkbox.png" width="20">';
+                        document.getElementById('input' + pos).innerHTML = '<input type="text" required id="quantity" autofocus></input>';
+                    } else {
+                        document.getElementById('div_img' + pos).innerHTML = "";
+                        document.getElementById('input' + pos).innerHTML = "";
+                    }
+                    
+                }
+
+               
+                function Click(pos) {  
+                   
+                    if (!$('div_img' + pos).show()) {
+                        document.getElementById('div_img' + pos).innerHTML = '<img src = "checked-checkbox.png" width="20">';
+                        document.getElementById('input' + pos).innerHTML = '<input type="text" required id="quantity" autofocus></input>';
+                        $('div_img' + pos).show();
+                        $('input' + pos).show();
+                    } else {
+                        $('div_img' + pos).hide();
+                        $('input' + pos).hide();
+                    }
+                }
+                $("#hide").click(function () {
+                   
+                });
+                $("#show").click(function () {
+                   
+               function toggle_visibility(id + pos) {
+                    document.getElementById('div_img' + pos) = '<img src = "checked-checkbox.png" width="20">';
+                    document.getElementById('input' + pos) = '<input type="text" required id="quantity" autofocus></input>';
+                    var e = document.getElementById('div_img' + pos);
+                    var b = document.getElementById('input' + pos);
+                    if (e.style.display == 'block' && b.style.display == 'block') { 
+                        e.style.display = 'none';
+                        b.style.display = 'none';
+                    }
+                    else{
+                        e.style.display = 'block';
+                        b.style.display = 'block';
+                    }
+                }
+                */
+                
+                function Click(pos) { //Parâmetro pos é a concatenação do nº da linha e da coluna correspondentes à posição do composto na tabela
+                    if (document.getElementById('div_img' + pos).innerHTML == '' && document.getElementById('input' + pos).innerHTML == ''){
+                        document.getElementById('div_img' + pos).innerHTML = '<img src = "checked-checkbox.png" width="20">';
+                        document.getElementById('input' + pos).innerHTML = '<input type="text" required id="quantity" autofocus></input>';
+                    }
+                    else{
+                        document.getElementById('div_img' + pos).innerHTML = "";
+                        document.getElementById('input' + pos).innerHTML = "";
+                    }
                 } 
             </script>
     </body>
