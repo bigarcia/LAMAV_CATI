@@ -3,13 +3,16 @@ html, body {
     overflow-x: hidden;
     padding: 0;
     margin: 0;
+    padding-bottom: 10px;
 }
+
 tr, output, #texto{
     color: #7f7d44;
     font-family: Arial, sans-serif;
     font-weight: bold;
     font-size: 25px;
 }
+
 input{
     background-color: #8B8B83;
     color: #025285;
@@ -18,9 +21,11 @@ input{
     font-weight: bold; 
     font-size: 20px;
 }
+
 #resultado {
     text-align:center;
 }
+
 #texto{
     text-decoration: underline;
     text-align: center;
@@ -40,14 +45,14 @@ input{
 }
 
 .logo {
-    margin-left: 580px;    
+    margin-left: 560px;    
 }
-
 
 .C1, .C2, .C3{
     padding: 50px 50px 50px 50px;
     text-align: center;
 }
+
 .C11, .C12, .C13, .C21, .C22, .C23, .C31, .C32, .C33 {
     display:inline;
 }
