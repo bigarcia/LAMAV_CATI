@@ -22,20 +22,22 @@ input{
 }
 #cabeçalho, #resultado{
     background-color: #025285;
+    
 }
 #resultado{
     border-radius: 20px;
     margin-left: 530px;
     margin-right: 530px;
 }
+
 .logo{
     margin-left: 666px;
 }
+
+
 .C1, .C2, .C3{
     padding: 50px 50px 50px 50px;
-    
 }
 .C11, .C12, .C13, .C21, .C22, .C23, .C31, .C32, .C33 {
     display:inline;
 }
-
