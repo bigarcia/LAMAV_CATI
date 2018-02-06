@@ -16,27 +16,37 @@ input{
     font-weight: bold; 
     font-size: 20px;
 }
+#resultado {
+    text-align:center;
+}
 #texto{
     text-decoration: underline;
     text-align: center;
 }
 #cabeçalho, #resultado{
-    background-color: #025285;
-    
+    background-color: #025285;  
 }
+#cabeçalho {
+    border: 10px solid;
+    border-color: #7f7d44;
+    margin-right: 6px;
+    margin-left: -1px;    
+}
+
 #resultado{
     border-radius: 20px;
     margin-left: 530px;
     margin-right: 530px;
 }
 
-.logo{
-    margin-left: 666px;
+.logo {
+    margin-left: 580px;    
 }
 
 
 .C1, .C2, .C3{
     padding: 50px 50px 50px 50px;
+    text-align: center;
 }
 .C11, .C12, .C13, .C21, .C22, .C23, .C31, .C32, .C33 {
     display:inline;
