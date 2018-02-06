@@ -1,6 +1,8 @@
-html, body{
+html, body {
     width: 100%;
-    overflow-x:hidden;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
 }
 tr, output, #texto{
     color: #7f7d44;
@@ -28,9 +30,7 @@ input{
 }
 #cabeçalho {
     border: 10px solid;
-    border-color: #7f7d44;
-    margin-right: 6px;
-    margin-left: -1px;    
+    border-color: #7f7d44; 
 }
 
 #resultado{
